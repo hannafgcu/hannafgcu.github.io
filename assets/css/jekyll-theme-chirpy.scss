@@ -37,14 +37,16 @@
   cursor: pointer;
 }
 
-/* Display the theme menu directly underneath the button */
+/* Display the complete menu underneath the button */
 #sidebar .sidebar-bottom > .btn-group .dropdown-menu.show {
-  position: absolute !important;
-  top: calc(100% + 0.5rem) !important;
-  right: 0 !important;
+  position: fixed !important;
+  top: 3.75rem !important;
+  left: calc(100vw - 11rem) !important;
+  right: auto !important;
   bottom: auto !important;
-  left: auto !important;
   transform: none !important;
+  width: 10rem !important;
+  min-width: 10rem !important;
   z-index: 2003 !important;
   pointer-events: auto !important;
 }
