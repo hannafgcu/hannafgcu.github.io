@@ -12,24 +12,24 @@
 {%- endif -%}
 ';
 
-/* Move the theme selector to the top-right */
+/* Move the theme selector to the browser's top-right corner */
 #sidebar .sidebar-bottom > .btn-group {
   position: fixed !important;
   top: 1rem !important;
-  right: 1rem !important;
-  left: auto !important;
+  left: calc(100vw - 4rem) !important;
+  right: auto !important;
   bottom: auto !important;
   z-index: 2000;
   pointer-events: auto;
 }
 
-/* Keep the theme menu below the button */
+/* Position the menu underneath the selector */
 #sidebar .sidebar-bottom > .btn-group .dropdown-menu.show {
   position: fixed !important;
   top: 3.5rem !important;
-  right: 1rem !important;
+  left: calc(100vw - 12rem) !important;
+  right: auto !important;
   bottom: auto !important;
-  left: auto !important;
   transform: none !important;
   z-index: 2001;
 }
