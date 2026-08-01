@@ -11,6 +11,10 @@
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/yacoubh"
 
+- type: ResearchGate
+  icon: "fab fa-researchgate"
+  url: "https://www.researchgate.net/profile/Yacoub-Hanna"
+
 - type: orcid
   icon: "fab fa-orcid"
   url: "https://orcid.org/0000-0002-8954-9336"
