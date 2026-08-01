@@ -1,5 +1,5 @@
 ---
-title: CV
+title: Curriculum Citae
 icon: fas fa-file-lines
 order: 5
 ---
