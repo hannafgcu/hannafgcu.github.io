@@ -40,11 +40,12 @@ social:
   links:
     # The first element serves as the copyright owner's link
     # https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/hannafgcu # change to your GitHub homepage
-    # Uncomment below to add more social links
     - https://scholar.google.com/citations?user=jbXCRpEAAAAJ&hl=en&oi=ao
     - https://orcid.org/0000-0002-8954-9336
     - https://www.linkedin.com/in/yacoubh/
+    - https://github.com/hannafgcu # change to your GitHub homepage
+    # Uncomment below to add more social links
+    
 
 # Site Verification Settings
 webmaster_verifications:
