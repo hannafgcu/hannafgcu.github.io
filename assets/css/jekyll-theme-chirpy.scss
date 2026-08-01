@@ -1,23 +1,26 @@
----
----
-
-@use 'abstracts/variables' with (
-  $theme: '{{ site.theme_mode }}'
-);
-
-/* prettier-ignore */
-@use 'main
-{%- if jekyll.environment == 'production' -%}
-  .bundle
-{%- endif -%}
-';
-
-/* Move the dark/light/system selector to the top-right corner */
+/* Move the theme button to the top-right */
 #sidebar .sidebar-bottom > .btn-group {
-  position: fixed;
+  position: fixed !important;
   top: 1rem;
   right: 1rem;
-  z-index: 1100;
+  z-index: 2000;
+  pointer-events: auto;
 }
 
+/* Ensure the button receives clicks */
+#mode-toggle {
+  position: relative;
+  z-index: 2001;
+  pointer-events: auto;
+}
 
+/* Display the theme menu below the button */
+#sidebar .sidebar-bottom > .btn-group .dropdown-menu.show {
+  position: fixed !important;
+  top: 3.5rem !important;
+  right: 1rem !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+  z-index: 2002;
+}
