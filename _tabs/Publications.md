@@ -2,7 +2,7 @@
 layout: page
 title: Publications
 icon: fas fa-stream
-order: 1
+order: 3
 ---
 
 ## Book Chapter
