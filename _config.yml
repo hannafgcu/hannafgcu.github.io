@@ -26,10 +26,16 @@ description: >- # used by seo meta and the atom feed
 url: "https://hannafgcu.github.io"
 
 github:
-  username: yacoubhanna-FGCU # change to your GitHub username
+  username: hannafgcu # change to your GitHub username
 
-twitter:
-  username: twitter_username # change to your Twitter username
+Google Scholar:
+  username: Yacoub Hanna # change to your Google Scholar username
+
+ORCID:
+  username: 0000-0002-8954-9336 # change to your ORCID username
+
+LinkedIn:
+  username: yacoubh # change to your LinkedIn username
 
 social:
   # Change to your full name.
