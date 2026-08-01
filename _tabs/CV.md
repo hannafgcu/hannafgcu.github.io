@@ -6,7 +6,7 @@ order: 5
 
 # Curriculum Vitae
 
-[View or Download My CV](/assets/files/Yacoub_Hanna_CV.pdf){: .btn .btn-primary }
+[View or Download My CV](/assets/files/Yacoub_CV_2026.pdf){: .btn .btn-primary }
 
 <iframe
   src="/assets/files/Yacoub_CV_2026.pdf"
