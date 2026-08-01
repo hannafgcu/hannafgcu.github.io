@@ -1,0 +1,29 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* Move the dark/light/system selector to the top-right corner */
+#sidebar .sidebar-bottom > .btn-group {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1100;
+}
+
+/* Open the selector menu downward */
+#sidebar .sidebar-bottom > .btn-group .dropdown-menu {
+  inset: 100% 0 auto auto !important;
+  transform: none !important;
+  margin-top: 0.4rem;
+  margin-bottom: 0 !important;
+}
