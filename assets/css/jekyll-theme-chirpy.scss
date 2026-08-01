@@ -1,20 +1,29 @@
-/* Move the theme button to the top-right */
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* Move the theme selector to the top-right */
 #sidebar .sidebar-bottom > .btn-group {
   position: fixed !important;
-  top: 1rem;
-  right: 1rem;
+  top: 1rem !important;
+  right: 1rem !important;
+  left: auto !important;
+  bottom: auto !important;
   z-index: 2000;
   pointer-events: auto;
 }
 
-/* Ensure the button receives clicks */
-#mode-toggle {
-  position: relative;
-  z-index: 2001;
-  pointer-events: auto;
-}
-
-/* Display the theme menu below the button */
+/* Keep the theme menu below the button */
 #sidebar .sidebar-bottom > .btn-group .dropdown-menu.show {
   position: fixed !important;
   top: 3.5rem !important;
@@ -22,5 +31,5 @@
   bottom: auto !important;
   left: auto !important;
   transform: none !important;
-  z-index: 2002;
+  z-index: 2001;
 }

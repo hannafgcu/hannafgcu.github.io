@@ -1,10 +1,9 @@
 ---
-#title: CV
+title: CV
 icon: fas fa-file-lines
 order: 5
 ---
 
-# Curriculum Vitae
 
 [View or Download My CV](/assets/files/Yacoub_CV_2026.pdf){: .btn .btn-primary }
 
