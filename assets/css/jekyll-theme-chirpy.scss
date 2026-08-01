@@ -12,6 +12,12 @@
 {%- endif -%}
 ';
 
+/* Allow controls positioned outside the sidebar to receive clicks */
+#sidebar {
+  z-index: 2000 !important;
+  overflow: visible !important;
+}
+
 /* Move the theme selector to the browser's top-right corner */
 #sidebar .sidebar-bottom > .btn-group {
   position: fixed !important;
@@ -19,11 +25,19 @@
   left: calc(100vw - 4rem) !important;
   right: auto !important;
   bottom: auto !important;
-  z-index: 2000;
-  pointer-events: auto;
+  z-index: 2001 !important;
+  pointer-events: auto !important;
 }
 
-/* Position the menu underneath the selector */
+/* Ensure the theme button remains clickable */
+#sidebar .sidebar-bottom > .btn-group #mode-toggle {
+  position: relative;
+  z-index: 2002 !important;
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
+/* Display the theme menu beneath the button */
 #sidebar .sidebar-bottom > .btn-group .dropdown-menu.show {
   position: fixed !important;
   top: 3.5rem !important;
@@ -31,5 +45,6 @@
   right: auto !important;
   bottom: auto !important;
   transform: none !important;
-  z-index: 2001;
+  z-index: 2003 !important;
+  pointer-events: auto !important;
 }
